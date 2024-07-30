@@ -1,14 +1,14 @@
 PESSOA
 {
     - CREATE*
-    - READ
+    - READ<
     - UPDATE
     - DELETE
 }
 
 ANIMAL
 {
-    - CREATE<
+    - CREATE*
     - READ
     - UPDATE
     - DELETE
