@@ -1,6 +1,6 @@
 PESSOA
 {
-    - CREATE
+    - CREATE <
     - READ
     - UPDATE
     - DELETE

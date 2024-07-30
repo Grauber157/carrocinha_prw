@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="CadastrarClienteExe.php" method="post">
+    <form action="cadastrarPessoaExe.php" method="post">
         <fieldset>
             <legend>Cadastro de Pessoa</legend>
             <div>
@@ -24,6 +24,8 @@
                 <label for="">Bairro: </label>
                 <input type="text" name="bairro"><br>
                 
+                <label for="">CEP: </label>
+                <input type="text" name="cep">
             </div>
 
             <div>
@@ -39,14 +41,8 @@
                         }
                     ?>
                 </select>
-            </div>
-
-            
-
-            <div>
                 <input type="submit" value="Enviar">
             </div>
-
         </fieldset>
     </form>
     <button><a href="../index.html">Voltar ao Menu</a></button><br>
