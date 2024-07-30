@@ -9,7 +9,8 @@
 
     include("../include/conexao.php");
 
-    $sql = "INSERT INTO cidade(nome, estado) VALUES ('$nome', '$estado')";
+    $sql = "INSERT INTO animal(nome, especie, raca, data_nascimento, idade, castrado, id_pessoa) 
+    VALUES ('$nome', '$especie', '$raca', '$data_nascimento', '$idade', '$castrado', '$dono')";
         echo $sql;
         $result = mysqli_query($con, $sql);
         if($result)
