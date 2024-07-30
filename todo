@@ -1,0 +1,23 @@
+PESSOA
+{
+    - CREATE
+    - READ
+    - UPDATE
+    - DELETE
+}
+
+ANIMAL
+{
+    - CREATE
+    - READ
+    - UPDATE
+    - DELETE
+}
+
+CIDADE
+{
+    - CREATE
+    - READ
+    - UPDATE
+    - DELETE
+}
