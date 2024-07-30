@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="teste.php" method="post">
+    <form action="cadastrarAnimalExe.php" method="post">
         <fieldset>
             <legend>Cadastro de Animais</legend>
             <div>
@@ -32,24 +32,18 @@
             </div>
 
             <div>
-                <label for="cidade">Cidade: </label>
-                <select name="cidade" id="cidade">
+                <label for="dono">Dono: </label>
+                <select name="dono">
                     <?php 
                         include('../include/conexao.php');
-                        $sql = "SELECT * FROM cidade";
+                        $sql = "SELECT * FROM pessoa";
                         $result = mysqli_query($con, $sql);
                         while($row = mysqli_fetch_array($result))
                         {
-                            echo "<option value='".$row['id']."'>".$row['nome']."/".$row['estado']."</option>";
+                            echo "<option value='".$row['id']."'>".$row['nome']."</option>";
                         }
                     ?>
                 </select>
-
-                <div>
-                    <label for="">CEP: </label>
-                    <input type="text" name="cep">
-                    
-                </div>
                 <div>
                     <input type="submit" value="Enviar">
                 </div>
