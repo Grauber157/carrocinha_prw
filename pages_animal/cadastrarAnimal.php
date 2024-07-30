@@ -16,7 +16,7 @@
                 <input type="text" name="nome"><br>
 
                 <label for="">Espécie: </label>
-                <input type="email" name="especie"><br>
+                <input type="text" name="especie"><br>
 
                 <label for="">Raça: </label>
                 <input type="text" name="raca"><br>
@@ -25,7 +25,7 @@
                 <input type="date" name="data_nascimento"><br>
                 
                 <label for="">Idade: </label>
-                <input type="text" name="idade"><br>
+                <input type="number" name="idade"><br>
 
                 <label for="">Castrado: </label>
                 <input type="checkbox" name="castrado" value="1"><br>
