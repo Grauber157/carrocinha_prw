@@ -1,6 +1,6 @@
 PESSOA
 {
-    - CREATE <
+    - CREATE*
     - READ
     - UPDATE
     - DELETE
@@ -16,7 +16,7 @@ ANIMAL
 
 CIDADE
 {
-    - CREATE
+    - CREATE<
     - READ
     - UPDATE
     - DELETE
