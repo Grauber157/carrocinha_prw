@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastrarCidade.php" method="post">
+    <form action="cadastrarCidadeExe.php" method="post">
         <fieldset>
             <legend>Cadastro de Cidades</legend>
             <div>
