@@ -24,8 +24,7 @@
                 <label for="">Bairro: </label>
                 <input type="text" name="bairro"><br>
                 
-                <label for="">CEP: </label>
-                <input type="text" name="cep">
+                
             </div>
 
             <div>
@@ -41,7 +40,16 @@
                         }
                     ?>
                 </select>
-                <input type="submit" value="Enviar">
+
+                <div>
+                    <label for="">CEP: </label>
+                    <input type="text" name="cep">
+                    
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+                
             </div>
         </fieldset>
     </form>
