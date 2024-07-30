@@ -8,7 +8,7 @@
     $cep = $_POST['cep'];
 
 
-    $sql = "INSERT INTO cliente(nome, email, senha, ativo, id_cidade) VALUES('$nome', '$email', '$senha', '$ativo', '$cidade')";
+    $sql = "INSERT INTO pessoa(nome, email, endereco, bairro, id_cidade, cep) VALUES('$nome', '$email', '$endereco', '$bairro', '$cidade', '$cep')";
     $result = mysqli_query($con, $sql);
     if($result)
     {
