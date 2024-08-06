@@ -11,7 +11,12 @@
     <?php
         include("../include/conexao.php");
 
-        $sql = "SELECT cli.id, cli.nome nomecliente, cli.email, cli.ativo, cid.nome nomecidade, cid.estado FROM cliente cli LEFT JOIN cidade cid on cid.id = cli.id_cidade";
+        $sql = "SELECT pes.id pessoa_id, pes.nome pessoa_nome, pes.email pessoa_email, 
+        pes.endereco pessoa_endereco, pes.bairro pessoa_bairro, cidade.nome cidade_nome,
+        pes.cep pessoa_cep
+        FROM pessoa pes
+        LEFT JOIN cidade ON cidade.id = pes.id_cidade;";
+
         $result = mysqli_query($con, $sql);
         //$row = mysqli_fetch_array($result);
 
@@ -26,7 +31,7 @@
             <th>Email</th>
             <th>Endereço</th>
             <th>Bairro</th>
-            <th>ID Cidade</th>
+            <th>Cidade</th>
             <th>CEP</th>
             <th>Alterar</th>
             <th>Deletar</th>
@@ -35,14 +40,15 @@
         while($row = mysqli_fetch_array($result))
         {
             echo "<tr>";
-            echo "<td>".$row['id']."</td>";
-            echo "<td>".$row['nomecliente']."</td>";
-            echo "<td>".$row['email']."</td>";
-            echo "<td>".$ativo."</td>";
-            echo "<td>".$row['nomecidade']."</td>";
-            echo "<td>".$row['estado']."</td>";
-            echo "<td><a href='AlterarCliente.php?id=".$row['id']."'>Alterar</a></td>";
-            echo "<td><a href='DeletarCliente.php?id=".$row['id']."'>Deletar</a></td>";
+            echo "<td>".$row['pessoa_id']."</td>";
+            echo "<td>".$row['pessoa_nome']."</td>";
+            echo "<td>".$row['pessoa_email']."</td>";
+            echo "<td>".$row['pessoa_endereco']."</td>";
+            echo "<td>".$row['pessoa_bairro']."</td>";
+            echo "<td>".$row['cidade_nome']."</td>";
+            echo "<td>".$row['pessoa_cep']."</td>";
+            echo "<td><a href='AlterarCliente.php?id=".$row['pessoa_id']."'>Alterar</a></td>";
+            echo "<td><a href='DeletarCliente.php?id=".$row['pessoa_id']."'>Deletar</a></td>";
             echo "<tr>";
         }
     ?>

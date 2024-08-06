@@ -1,7 +1,7 @@
 PESSOA
 {
     - CREATE*
-    - READ<
+    - READ*
     - UPDATE
     - DELETE
 }
@@ -9,7 +9,7 @@ PESSOA
 ANIMAL
 {
     - CREATE*
-    - READ
+    - READ<
     - UPDATE
     - DELETE
 }
