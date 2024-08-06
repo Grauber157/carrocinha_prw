@@ -3,9 +3,12 @@
     $especie = $_POST['especie'];
     $raca = $_POST['raca'];
     $data_nascimento = $_POST['data_nascimento'];
-    $idade = $_POST['idade'];
     $castrado = isset($_POST['castrado']);
     $dono = $_POST['dono'];
+
+    $nascimento = new DateTime($data_nascimento);
+    $atual = new DateTime();
+    $idade = $atual -> diff($nascimento)->y;
 
     include("../include/conexao.php");
 

@@ -23,9 +23,6 @@
 
                 <label for="">Data de Nascimento: </label>
                 <input type="date" name="data_nascimento"><br>
-                
-                <label for="">Idade: </label>
-                <input type="number" name="idade"><br>
 
                 <label for="">Castrado: </label>
                 <input type="checkbox" name="castrado" value="1"><br>
