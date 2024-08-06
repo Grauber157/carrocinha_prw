@@ -24,16 +24,16 @@
             <th>Código</th>
             <th>Nome</th>
             <th>Email</th>
-            <th>Ativo</th>
-            <th>Cidade</th>
-            <th>Estado</th>
+            <th>Endereço</th>
+            <th>Bairro</th>
+            <th>ID Cidade</th>
+            <th>CEP</th>
             <th>Alterar</th>
             <th>Deletar</th>
         </tr>
     <?php
         while($row = mysqli_fetch_array($result))
         {
-            $ativo = $row['ativo'] == 1 ? "Sim": "Não";
             echo "<tr>";
             echo "<td>".$row['id']."</td>";
             echo "<td>".$row['nomecliente']."</td>";
